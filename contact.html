@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, textarea, input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>NOUS CONTACTER</h1>
+    <form action="/submit_form" method="post">
+        <label for="name">Votre nom</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email_or_phone">E-mail/Téléphone</label>
+        <input type="email" id="email_or_phone" name="email_or_phone" required>
+
+        <label for="project_description">Parlez-nous de votre projet</label>
+        <textarea id="project_description" name="project_description" rows="4" required></textarea>
+
+        <label for="needs">Selectionnez vos besoins :</label>
+        <select id="needs" name="needs" required>
+            <option value="">-- Sélectionnez --</option>
+            <option value="Design UI/UX">Design UI/UX</option>
+            <option value="Refonte site web">Refonte site web</option>
+            <option value="Site vitrine">Site vitrine</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Blog">Blog</option>
+            <option value="Application mobile">Application mobile</option>
+            <option value="Cloud">Cloud</option>
+            <option value="Autres">Autres</option>
+        </select>
+
+        <label for="budget">Votre budget</label>
+        <input type="number" id="budget" name="budget" min="0" required>
+
+        <input type="submit" value="ENVOYER">
+    </form>
+
+    <h2>THINK OUTSIDE THE BOX</h2>
+    <p>Email: <a href="mailto:hello@inputstudio.co">hello@inputstudio.co</a></p>
+    <p>Téléphone : +225 07 78 47 91 52</p>
+    <p>Adresse: Planet Earth</p>
+</body>
+</html>
