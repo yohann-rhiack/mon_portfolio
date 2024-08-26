@@ -1635,6 +1635,12 @@ input::-moz-focus-inner {
   height: 36px;
   margin: 0;
 }
+.site-logo h2{
+  font-family: "Roboto", sans-serif;
+  color: #f46404;
+  margin-top: 5px;
+  font-size: 50px;
+}
 
 /* -------------------------------------------------------------------
  * ## main navigation
@@ -2505,8 +2511,8 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 19.2rem;
-  padding-bottom: 16rem;
+  padding-top: 7.2rem;
+  padding-bottom: 2rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2654,7 +2660,7 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-cta {
-  padding-top: 13.5rem;
+  padding-top: 0;
   padding-bottom: 13.6rem;
   background-color: #000000;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
