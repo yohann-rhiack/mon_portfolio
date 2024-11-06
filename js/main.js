@@ -267,6 +267,24 @@
 
     };
 
+    /* Text Animation - Slide In from Left
+    * ------------------------------------------------------ */
+    var ssTextAnimation = function() {
+        const introTextH3 = document.querySelector('.intro-text h3');
+        const introTextH1 = document.querySelector('.intro-text h1');
+
+        if (introTextH3 && introTextH1) {
+            // Appliquez les classes d'animation avec un léger décalage pour chaque élément
+            setTimeout(() => {
+                introTextH3.classList.add('slide-in-left');
+            }, 500); // Délai pour le h3
+
+            setTimeout(() => {
+                introTextH1.classList.add('slide-in-left');
+            }, 1000); // Délai pour le h1 pour créer un effet de suite
+        }
+    };
+
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -282,6 +300,7 @@
         ssSmoothScroll();
         ssAlertBoxes();
         ssAOS();
+        ssTextAnimation();  // Ajout de l'animation de texte
 
     })();
 
